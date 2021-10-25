@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("https://www.osakayuku.com/wp-content/uploads/2021/07/da7339dbd8b40fc019f3ada5c03a1b89-768x480.jpg");
+    
+    
+}
+
+nav {
+    border:2px solid white;
+    background: black;
+    color: lightcyan;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav a {
+    float: right;
+    margin: 10px;
+    text-decoration: none;
+    color: lightcyan;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+nav a:hover {
+    text-decoration-line: underline;
+    color:darkgoldenrod;
+    
+
+}
+
+
+
+.nav2 {
+    background:whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2 a {
+    color: black;
+    justify-content: center;
+    align-items: center;
+    float: none;
+    margin-left: 220px;
+}
+.container {
+    margin-top: -5px;
+    /* width: 1900px; */
+    height: 650px;
+    overflow: hidden;
+}
+
+.slider {
+    height: 500px;
+    display: flex;
+}
+
+.slider input {
+display: none;
+}
+
+.sliderimg {
+    width: 100%;
+    transition: 2s;
+}
+
+.sliderimg img {
+   
+    width: 800px;
+    height: 500px;
+}
+
+
+.manual-navi {
+position: absolute;
+width: 800px;
+margin-top: 600px;
+margin-left: 500px;
+display: flex;
+justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+    margin: 10px;
+}
+
+.manual-btn:hover {
+background: white;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -210%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -315%;
+}
+
+.automatic-navi {
+    position: absolute;
+    display: none;
+    width: 800px;
+    justify-content: center;
+    margin-top: 450px;
+}
+
+.automatic-navi div {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 2s;
+}
+
+#radio1:checked ~ .automatic-navi .auto-btn1 {
+    background: white;
+}
+
+#radio2:checked ~ .automatic-navi .auto-btn2 {
+    background: white;
+}
+#radio3:checked ~ .automatic-navi .auto-btn3 {
+    background: white;
+}
+#radio4:checked ~ .automatic-navi .auto-btn4 {
+    background: white;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    
+}
+
+p>img {
+    float: left;
+    margin: 5px;
+}
+
+p::first-letter {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+article{
+    border: 2px solid darkgrey;
+    background-color: rgba(169, 169, 169, 0.884);
+    color: black;
+    margin: 5px;
+}
+
+article div {
+    width: 558px;
+    height: 500px;
+    overflow: hidden;
+    text-align: left;
+    margin: 20px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 80%;
+}
+
+.icon a {
+    font-size: 80px;
+    position: fixed;
+    top: 40%;
+    right: 0%;
+    color: white;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    align-content: center;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+}
